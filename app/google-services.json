@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1007701911477",
+    "firebase_url": "https://notifikacijerad.firebaseio.com",
+    "project_id": "notifikacijerad",
+    "storage_bucket": "notifikacijerad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007701911477:android:8976e18d4c9088f1a0dbfc",
+        "android_client_info": {
+          "package_name": "elab3.com.notifikacijerad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007701911477-btc0gfio9e7m9d3bb5320s4d2vtijbl8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "elab3.com.notifikacijerad",
+            "certificate_hash": "b078c5a690cde9750e8fd8761b4f722a34c1da1d"
+          }
+        },
+        {
+          "client_id": "1007701911477-44fd82nnhke06bvd7cqbq0t67u5r2650.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-EdbDMZ8Qd06ObNxMCS0bQFlUJC6GkKs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007701911477-44fd82nnhke06bvd7cqbq0t67u5r2650.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
