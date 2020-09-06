@@ -15,8 +15,8 @@ public class App extends Application {
     //android:name=".App"
 
 
-    public static final String CHANEL_1_ID="CHANEL_1";
-    public static final String CHANEL_2_ID="CHANEL_2";
+    public static final String CHANNEL_1_ID="CHANNEL_1";
+    public static final String CHANNEL_2_ID="CHANNEL_2";
     @Override
     public void onCreate() {
         super.onCreate();
@@ -31,20 +31,20 @@ public class App extends Application {
         //VERSION_CODES.O - verzija Oreo (8)
         if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.O){
             // Pravljenje kanala za notifikaciju.
-            NotificationChannel chanel1= new NotificationChannel(CHANEL_1_ID,"chanel1", NotificationManager.IMPORTANCE_HIGH);
+            NotificationChannel channel1= new NotificationChannel(CHANNEL_1_ID,"channel1", NotificationManager.IMPORTANCE_HIGH);
             //setovanje parametara
-            chanel1.enableLights(true);
-            chanel1.setLightColor(Color.RED);
-            chanel1.enableVibration(true);
-            chanel1.setDescription("Ovo su neuspesno obavljene operacije nad bazom");
+            channel1.enableLights(true);
+            channel1.setLightColor(Color.RED);
+            channel1.enableVibration(true);
+            channel1.setDescription("Uspesno");
 
-            NotificationChannel chanel2= new NotificationChannel(CHANEL_2_ID,"chanel2", NotificationManager.IMPORTANCE_LOW);
+            NotificationChannel channel2= new NotificationChannel(CHANNEL_2_ID,"channel2", NotificationManager.IMPORTANCE_LOW);
 
-            chanel1.setDescription("Ovo su uspesno obavljene operacije nad bazom");
+            channel2.setDescription("Neuspesno");
 
             NotificationManager manager= getSystemService(NotificationManager.class);
-            manager.createNotificationChannel(chanel1);
-            manager.createNotificationChannel(chanel2);
+            manager.createNotificationChannel(channel1);
+            manager.createNotificationChannel(channel2);
         }
     }
 }

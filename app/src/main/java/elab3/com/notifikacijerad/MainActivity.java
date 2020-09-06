@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         String poruka= etTekst.getText().toString();
 
         //Kreiranje notifikacije
-        Notification notification = new NotificationCompat.Builder(this, App.CHANEL_1_ID)
+        Notification notification = new NotificationCompat.Builder(this, App.CHANNEL_1_ID)
                 .setContentTitle(naslov)
                 .setContentText(poruka)
                 //Stil BigText
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         //Bitmap slika= BitmapFactory.decodeResource(getResources(),R.drawable.slika);
         String naslov= etNaslov.getText().toString();
         String poruka= etTekst.getText().toString();
-        Notification notification = new NotificationCompat.Builder(this, App.CHANEL_2_ID)
+        Notification notification = new NotificationCompat.Builder(this, App.CHANNEL_2_ID)
                 .setContentTitle(naslov)
                 //Stil bigPicture
                 //.setStyle( new NotificationCompat.BigPictureStyle().bigPicture(slika))
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
         /* Grupne notifikacije. Moramo imati summaryNotifikaciju koja ce spojiti sve Notifikacije sa istim nazivom grupe u jednu
 
-            Notification notification= new NotificationCompat.Builder(this, App.CHANEL_2)
+            Notification notification= new NotificationCompat.Builder(this, App.CHANNEL_2)
         .setContentTitle(title)
         .setContentText(message)
         .setStyle(new NotificationCompat.BigPictureStyle().bigPicture(picture))
@@ -70,14 +70,14 @@ public class MainActivity extends AppCompatActivity {
         .setColor(Color.BLUE)
         .setGroup("Grupa 1")
         .build();
-            Notification notification2= new NotificationCompat.Builder(this, App.CHANEL_2)
+            Notification notification2= new NotificationCompat.Builder(this, App.CHANNEL_2)
         .setContentTitle(title)
         .setContentText("DRUGA PORUKA")
         .setSmallIcon(R.drawable.done)
         .setColor(Color.BLUE)
         .setGroup("Grupa 1")
         .build();
-            Notification summaryNotification= new NotificationCompat.Builder(this, App.CHANEL_2)
+            Notification summaryNotification= new NotificationCompat.Builder(this, App.CHANNEL_2)
         .setContentTitle(title)
         .setContentText("Prikazi notifikacije")
         .setStyle(new NotificationCompat.BigPictureStyle().bigPicture(picture))
